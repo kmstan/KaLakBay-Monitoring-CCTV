@@ -1,15 +1,16 @@
 ## YOLOv2 Accelerator
-This repo is about YOLOv2 accelerator implemented in vivado HLS 2019.2. 
+This repo is about YOLOv2 accelerator implemented in Vitis HLS 2021.1. 
 
-__Target Device:  xazu3eg-sfvc784-1-i__ 
+1. Check that the binary files from step 02 has been copied to this directory. Rename cnn_hls.cpp to cnn.cpp.
+2. Create a new project in the Vitis HLS with the following settings
 
-__Target clock: 3__ (Estimated: 3.0 Uncertainty: 0.38; __I just ran it in 250MHz; Off course, it can exe in higher freq.__) 
-![hls](./hls.png)
+__Target Device:  xc7z020-clg400-1__ 
 
-Current testbench can just pass C-simulation, tb for C-RTL cosimulation maybe need several days. 
-~~Some other related files are available from software version foler.~~ If you have finished software version's steps, __All__ related files are included in src_xx repo.
-__You can also change the PIPELINE II in CONV compute moudle, I have tested II=1, 2, 3__
-![csim](./csim.png)
+__Target clock: 5.2__ (Estimated: 5.2 Uncertainty: 0.65;) 
+![hls](./02_hls_project.png)
 
+3. Add the cnn.* files as source and the rest shown below as part of the testbench
 
-__src_int16's c-sim is too slow that I didnt wait for it.__
+![files](./02_hls_files.png)
+
+4. Run the Simulation, then Synthesis, then implementation and Export RTL
