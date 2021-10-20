@@ -3,7 +3,7 @@ This folder is about how to reorganize YOLOv2's weight. (The number of biases is
 
 First, just copy two files(weights.bin and bias.bin) from step 1 to software_version/src_int16/ . Go to that directory.
 
-Then, __make clean
+Then, __make clean__
 
 Then, __make gen_i16; ./test_layers or ./test_layers ../test_imgs/dog.jpg__ This step will generate reorganized weight file(16bit) and some related cfg files.
 
