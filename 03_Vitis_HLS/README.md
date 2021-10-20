@@ -6,7 +6,7 @@ This repo is about YOLOv2 accelerator implemented in Vitis HLS 2021.1.
 
 __Target Device:  xc7z020-clg400-1__ 
 
-__Target clock: 5.2__ (Estimated: 5.2 Uncertainty: 0.65;) 
+__Target clock: 5.2 ; Uncertainty: 0.65__ 
 ![hls](./02_hls_project.png)
 
 3. Add the cnn.* files as source and the rest shown below as part of the testbench
