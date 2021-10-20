@@ -1,7 +1,7 @@
 # Reorganize/Reorder Weights and Quantize Weights and Biases
 This folder is about how to reorganize YOLOv2's weight. (The number of biases is too small, and we can load each layer's biases just once before the computing phase.)
 
-First, just copy two files(weights.bin and bias.bin) from step 1 to software_version/src_int16/ .
+First, just copy two files(weights.bin and bias.bin) from step 1 to software_version/src_int16/ . Go to that directory.
 
 Then, __make clean
 
